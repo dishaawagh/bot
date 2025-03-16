@@ -1,14 +1,12 @@
 # Step 1: Install Required Libraries
 !pip install requests
 
-
-
 # Step 2: Import Libraries
 import requests
 import json
 
 # Step 3: Define Your Gemini API Key
-GEMINI_API_KEY = "Entire_your_api_key"  # Replace with your actual Gemini API key
+GEMINI_API_KEY = "AIzaSyDnOIewAcFdrq-lLQP4LzJePJTLkAZ4UMY"  # Replace with your actual Gemini API key
 
 # Step 4: Define the Gemini API Endpoint
 API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
