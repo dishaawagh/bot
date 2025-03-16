@@ -1,5 +1,3 @@
-# Step 1: Install Required Libraries
-pip install requests
 
 # Step 2: Import Libraries
 import requests
