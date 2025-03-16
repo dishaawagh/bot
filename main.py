@@ -1,7 +1,7 @@
 # Step 1: Install Required Libraries
 # Run this command in your terminal to install Streamlit:
 # pip install streamlit requests
-
+#!pip install streamlit requests
 # Step 2: Import Libraries
 import streamlit as st
 import requests
@@ -22,7 +22,7 @@ def get_response(user_input):
                 "parts": [{"text": user_input}]
             }]
         }
-        
+
         # Make the POST request to the Gemini API
         headers = {
             "Content-Type": "application/json"
@@ -31,7 +31,7 @@ def get_response(user_input):
             "key": GEMINI_API_KEY
         }
         response = requests.post(API_URL, headers=headers, params=params, data=json.dumps(payload))
-        
+
         # Parse the response
         if response.status_code == 200:
             response_data = response.json()
@@ -46,8 +46,8 @@ def get_response(user_input):
 # Step 6: Create the Streamlit UI
 def main():
     # Set the title of the app
-    st.title("💬 Chatbot Powered by Gemini API")
-    st.write("Hi! I'm here to help. Type your message below and I'll respond!")
+    st.title("💬 MindScan AI – Emphasizes AI-powered psychological assessments.")
+    st.write("Hi! I'm here to help. Type your message below and I'll respond, hope you feel better soon!")
 
     # Initialize session state for chat history
     if "chat_history" not in st.session_state:
